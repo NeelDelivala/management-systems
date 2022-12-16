@@ -15,7 +15,7 @@ def adds():
   s = "Insert into students(name, roll, math, english, physics, biology, chemistry, percent) VALUES (%s, %d, %d, %d, %d, %d, %d, %f)"
   val = (name, roll, math, english, physics, biology, chemistry, percent)
   mycur.execute(s,val)
-  mycon.commit
+  mycon.commit()
 
 def dels():
   a = int(input("Roll Number: "))
